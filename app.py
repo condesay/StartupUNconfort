@@ -46,7 +46,7 @@ if st.button("Rechercher des personnes"):
     # Pour cet exemple, nous filtrons simplement les personnes de la liste
     # Affichage des résultats
     for personne in personnes:
-        if niveau_anxiete==niveau_anxiete_recherche
+        if niveau_anxiete=="niveau_anxiete_recherche"
             st.write(personne["nom"])
             st.write("Age :", personne["age"])
             st.write("Niveau d'anxiété :", personne["niveau_anxiete"])
