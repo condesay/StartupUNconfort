@@ -42,7 +42,7 @@ if identification_reussie:
     elif niveau_anxiete == "Un peu":
         st.write("Défi moyen : écrivez un paragraphe sur votre plus grande peur")
     elif niveau_anxiete == "Assez":
-        st.write("Défi difficile : contactez quelqu'un que vous n'avez pas parl
+        st.write("Défi difficile : contactez quelqu'un que vous n'avez pas parlé")
   
     else:
         st.write("Défi très difficile : donnez un discours en public")
