@@ -2,11 +2,11 @@ import streamlit as st
 
 # Définition d'une liste de personnes
 personnes = [
-    {"nom": "Jane Doe", "age": 28, "niveau_anxiete": "Assez", "description": "Je suis une personne calme et réfléchie, j'aime aider les autres à surmonter leurs peurs."},
-    {"nom": "John Smith", "age": 35, "niveau_anxiete": "Très", "description": "Je suis un passionné de sports extrêmes et j'aime défier mes limites."},
-    {"nom": "Alice Johnson", "age": 42, "niveau_anxiete": "Un peu", "description": "Je suis une personne optimiste qui aime découvrir de nouvelles choses."},
-    {"nom": "Bob Brown", "age": 50, "niveau_anxiete": "Pas du tout", "description": "Je suis une personne très détendue qui ne se laisse pas facilement stresser."},
-    {"nom": "Sarah Lee", "age": 25, "niveau_anxiete": "Assez", "description": "Je suis une personne créative qui trouve souvent des solutions originales aux problèmes."},
+    {"nom": "Jane Doe", "age": 28, "niveau_anxiete": "Assez", "description": "Je suis une personne calme et réfléchie, j'aime aider les autres à surmonter leurs peurs.", "Numero":"0778663503"},
+    {"nom": "John Smith", "age": 35, "niveau_anxiete": "Très", "description": "Je suis un passionné de sports extrêmes et j'aime défier mes limites.","Numero":"0750664503"},
+    {"nom": "Alice Johnson", "age": 42, "niveau_anxiete": "Un peu", "description": "Je suis une personne optimiste qui aime découvrir de nouvelles choses.", "Numero":"0730564503"},
+    {"nom": "Bob Brown", "age": 50, "niveau_anxiete": "Pas du tout", "description": "Je suis une personne très détendue qui ne se laisse pas facilement stresser.", "Numero":"0780168003"},
+    {"nom": "Sarah Lee", "age": 25, "niveau_anxiete": "Assez", "description": "Je suis une personne créative qui trouve souvent des solutions originales aux problèmes.", "Numero":"0680264553"},
 ]
 
 # Titre de l'application
