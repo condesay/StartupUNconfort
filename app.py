@@ -2,24 +2,33 @@ import streamlit as st
 
 # Définition d'une liste de personnes
 personnes = [
-    {"nom": "Jane Doe", "age": 28, "niveau_anxiete": "Assez", "description": "Je suis une personne calme et réfléchie, j'aime aider les autres à surmonter leurs peurs.", "Numero":"0778663503"},
-    {"nom": "John Smith", "age": 35, "niveau_anxiete": "Très", "description": "Je suis un passionné de sports extrêmes et j'aime défier mes limites.","Numero":"0750664503"},
-    {"nom": "Alice Johnson", "age": 42, "niveau_anxiete": "Un peu", "description": "Je suis une personne optimiste qui aime découvrir de nouvelles choses.", "Numero":"0730564503"},
-    {"nom": "Bob Brown", "age": 50, "niveau_anxiete": "Pas du tout", "description": "Je suis une personne très détendue qui ne se laisse pas facilement stresser.", "Numero":"0780168003"},
-    {"nom": "Sarah Lee", "age": 25, "niveau_anxiete": "Assez", "description": "Je suis une personne créative qui trouve souvent des solutions originales aux problèmes.", "Numero":"0680264553"},
+    {"nom": "Jane Doe", "age": 28, "niveau_anxiete": "Assez", "description": "Je suis une personne calme et réfléchie, j'aime aider les autres à surmonter leurs peurs."},
+    {"nom": "John Smith", "age": 35, "niveau_anxiete": "Très", "description": "Je suis un passionné de sports extrêmes et j'aime défier mes limites."},
+    {"nom": "Alice Johnson", "age": 42, "niveau_anxiete": "Un peu", "description": "Je suis une personne optimiste qui aime découvrir de nouvelles choses."},
+    {"nom": "Bob Brown", "age": 50, "niveau_anxiete": "Pas du tout", "description": "Je suis une personne très détendue qui ne se laisse pas facilement stresser."},
+    {"nom": "Sarah Lee", "age": 25, "niveau_anxiete": "Assez", "description": "Je suis une personne créative qui trouve souvent des solutions originales aux problèmes."},
 ]
 
 # Titre de l'application
 st.title("Mon application de jeu")
 st.image("image.png", caption="Une image pour vous inspirer")
 
+# Section pour la création de compte et l'identification
+st.header("Création de compte et identification")
+st.write("Pour jouer, vous devez créer un compte et vous identifier.")
+nom_utilisateur = st.text_input("Entrez votre nom d'utilisateur")
+mot_de_passe = st.text_input("Entrez votre mot de passe", type="password")
+if st.button("Créer un compte"):
+    st.write("Compte créé avec succès ! Vous pouvez maintenant vous identifier.")
+if st.button("S'identifier"):
+    st.write("Identification réussie ! Bienvenue", nom_utilisateur, "!")
+
 # Formulaire pour obtenir les informations de l'utilisateur
-nom_utilisateur = st.text_input("Entrez votre nom")
+st.header("Informations sur l'utilisateur")
 age_utilisateur = st.number_input("Entrez votre âge")
 niveau_anxiete = st.selectbox("À quel point vous sentez-vous anxieux en général ?", ["Pas du tout", "Un peu", "Assez", "Très"])
 
 # Affichage des informations de l'utilisateur
-st.write("Bienvenue", nom_utilisateur, "!")
 st.write("Vous avez", age_utilisateur, "ans et vous vous sentez", niveau_anxiete, "anxieux en général.")
 
 # Définition des défis en fonction du niveau d'anxiété de l'utilisateur
