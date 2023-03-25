@@ -2,7 +2,8 @@ import streamlit as st
 
 # Titre de l'application
 st.title("Mon application de jeu")
-
+# Affichage d'une image
+st.image("image.png", caption="Une image pour vous inspirer")
 # Formulaire pour obtenir les informations de l'utilisateur
 nom_utilisateur = st.text_input("Entrez votre nom")
 difficulte = st.selectbox("Choisissez votre niveau de difficulté", ["Facile", "Moyen", "Difficile"])
@@ -18,9 +19,6 @@ elif difficulte == "Moyen":
     st.write("Défi moyen : écrivez un paragraphe sur votre plus grande peur")
 else:
     st.write("Défi difficile : contactez quelqu'un que vous n'avez pas parlé depuis longtemps")
-
-# Affichage d'une image
-st.image("image.png", caption="Une image pour vous inspirer")
 
 # Bouton pour commencer le jeu
 if st.button("Commencer le jeu"):
