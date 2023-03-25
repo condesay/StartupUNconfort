@@ -37,7 +37,6 @@ st.header("Mise en relation avec d'autres joueurs")
 st.write("Si vous avez besoin d'aide pour relever votre défi, vous pouvez vous connecter avec d'autres joueurs dans cette section.")
 
 # Formulaire pour la mise en relation
-nom_recherche = st.text_input("Entrez le nom de la personne que vous cherchez")
 niveau_anxiete_recherche = st.selectbox("À quel niveau d'anxiété cette personne doit-elle être ?", ["Pas du tout", "Un peu", "Assez", "Très"])
 
 # Bouton pour rechercher des personnes
