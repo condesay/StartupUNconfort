@@ -42,5 +42,6 @@ niveau_anxiete_recherche = st.selectbox("À quel niveau d'anxiété cette person
 # Bouton pour rechercher des personnes
 if st.button("Rechercher des personnes"):
     st.write("Voici les résultats de votre recherche :")
+    # Tri des personnes en fonction du niveau d'anxiété
     personnes_filtrees = [personne for personne in personnes if personne["niveau_anxiete"] == niveau_anxiete_recherche]
-
+    # Affichage des personnes filtrées
