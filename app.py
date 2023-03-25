@@ -49,4 +49,4 @@ if st.button("Rechercher des personnes"):
         st.write("Aucune personne correspondant aux critères de recherche n'a été trouvée.")
     else:
         for personne in personnes_filtrees:
-           st.write(personnes)
+           st.write(personnes[])
