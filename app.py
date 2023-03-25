@@ -45,3 +45,8 @@ if st.button("Rechercher des personnes"):
     # Tri des personnes en fonction du niveau d'anxiété
     personnes_filtrees = [personne for personne in personnes if personne["niveau_anxiete"] == niveau_anxiete_recherche]
     # Affichage des personnes filtrées
+    if len(personnes_filtrees) == 0:
+        st.write("Aucune personne correspondant aux critères de recherche n'a été trouvée.")
+    else:
+        for personne in personnes_filtrees:
+           st.write(personne["nom"])
