@@ -11,7 +11,7 @@ personnes = [
 
 # Titre de l'application
 st.title("Mon application de jeu")
-st.image("image.png", caption="Une image pour vous inspirer")
+st.image("image2.png", caption="Une image pour vous inspirer")
 
 # Section pour la création de compte et l'identification
 st.header("Création de compte et identification")
